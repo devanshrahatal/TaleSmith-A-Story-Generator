@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.genre-selection {
+    margin-bottom: 20px;
+}
+
+select {
+    padding: 10px;
+    margin: 10px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background: rgba(255, 255, 255, 0.8);
+    color: #333;
+    transition: background 0.3s ease;
+}
+
+select:focus {
+    background: rgba(255, 255, 255, 1);
+    outline: none;
+    border-color: #38a169;
+}
+
+option {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    font-size: 1rem;
+    background: linear-gradient(45deg, #ff9966, #ff5e62);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: linear-gradient(45deg, #ff5e62, #ff9966);
+    transform: scale(1.05); 
+}
+
+.story-output {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+    color: white;
+}
+
+h3 {
+    color: orangered;
+}
+
+#storyText {
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+#dictateBtn, #downloadBtn {
+    display: inline-block;
+    width: auto;
+    margin: 10px auto;
+    text-align: center;
+}
+
+button-group {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    button {
+        padding: 10px;
+    }
+}

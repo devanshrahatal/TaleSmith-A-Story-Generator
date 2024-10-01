@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "icon" href ="logo1.png" type = "image/x-icon">
+    <title>TaleSmith</title>
+    <title>Story Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tale Smith<br>(A Story Generator)</h1>
+        <p>Select a genre and generate a story!</p>
+        
+        <div class="genre-selection">
+            <label for="genre">Choose Genre:</label>
+            <select id="genre">
+                <option value="adventure">Adventure</option>
+                <option value="fantasy">Fantasy</option>
+                <option value="mystery">Mystery</option>
+                <option value="sci-fi">Sci-Fi</option>
+                <option value="love">Love</option>
+                <option value="sad">Sad</option>
+            </select>
+            <button onclick="generateStory()">Generate Story</button>
+        </div>
+        
+        <div class="story-output">
+            <h3>Your Story:</h3>
+            <p id="storyText">Your story will appear here...</p>
+        </div>
+        <div class="button-group">
+
+            <button id="dictateBtn" style="display: none;" onclick="dictateStory()">Dictate Story</button>
+            <button id="downloadBtn" style="display: none;" onclick="downloadStory()">Download Story as PDF</button>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
